@@ -3,8 +3,6 @@ using UnityEngine;
 public class BasicTriggerScript : MonoBehaviour
 {
 
-    private bool playerInRange = false;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,7 +24,6 @@ public class BasicTriggerScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerInRange = true;
             Debug.Log(gameObject.name + " was triggered by " + other.name);
             other.GetComponent<PlayerInteractScript>().SetInteractable(this);
         }
@@ -36,7 +33,6 @@ public class BasicTriggerScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerInRange = false;
             Debug.Log(gameObject.name + " left the trigger " + other.name);
             other.GetComponent<PlayerInteractScript>().ClearInteractable(this);
         }
