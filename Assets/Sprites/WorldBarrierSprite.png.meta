@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ae46db049433cec488f921936b81ea6c
+guid: 61d99608492b20241bf64a21d29d5724
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3526902163829500596
-    second: RodSprite_0
+      213: 1220440544710079919
+    second: WorldBarrierSprite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RodSprite_0
+      name: WorldBarrierSprite_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 7
-        width: 18
-        height: 18
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c45d2671b2ded0fc0800000000000000
-      internalID: -3526902163829500596
+      spriteID: fa5bde09530efe010800000000000000
+      internalID: 1220440544710079919
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RodSprite_0: -3526902163829500596
+      WorldBarrierSprite_0: 1220440544710079919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
