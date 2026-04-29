@@ -108,6 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   bulletSpeed: 15
   lifetime: 3
+  playerTransform: {fileID: 208842825297952919, guid: 445fdf3b980b65748a786693e9cd0600, type: 3}
 --- !u!50 &-6089087119654902651
 Rigidbody2D:
   serializedVersion: 5

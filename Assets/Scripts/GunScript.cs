@@ -47,7 +47,8 @@ public class GunScript : MonoBehaviour
     
     public void Shoot()
     {
-        bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+        Vector3 spawnOffset = transform.right * 0.5f;
+        bullet = Instantiate(bulletPrefab, transform.position + spawnOffset, transform.rotation);
     }
 
 }
