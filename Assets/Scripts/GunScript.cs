@@ -1,24 +1,38 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class GunScript : MonoBehaviour
 {
-
+    private SpriteRenderer spriteRenderer;
     [SerializeField] private Transform playerTarget;
-    private Vector2 gunLocation;
+
+    public GameObject bulletPrefab;
+    private GameObject bullet;
+    private float nextShootTime = 0f;
+
+    public InputAction shootAction;
+    private float gunCooldown = 0.50f;
+
     public Vector2 pointerPosition { get; set; }
     public Vector2 AimPosition { get; private set; }
-    private SpriteRenderer spriteRenderer;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        shootAction.Enable();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.right = (pointerPosition - (Vector2)transform.position).normalized;
+        if (shootAction.WasPressedThisFrame() && Time.time >= nextShootTime)
+        {
+            Shoot();
+            nextShootTime = Time.time + gunCooldown;
+        }
     }
     public void Aim(Vector2 target)
     {
@@ -29,6 +43,11 @@ public class GunScript : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, angle);
 
         spriteRenderer.flipY = (angle > 90 || angle < -90);
+    }
+    
+    public void Shoot()
+    {
+        bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
     }
 
 }
