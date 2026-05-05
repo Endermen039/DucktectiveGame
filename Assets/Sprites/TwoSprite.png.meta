@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bdb64f52b3d6f32459e71710a8f4db44
+guid: baad72c4fdae3b14eaa62bc5329e7bcc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1365864010905203211
-    second: EvilDavisSpriteNew_0
+      213: 7134678162237560532
+    second: TwoSprite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EvilDavisSpriteNew_0
+      name: TwoSprite_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 31
-        height: 31
+        x: 12
+        y: 13
+        width: 8
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fd41823be97b0de0800000000000000
-      internalID: -1365864010905203211
+      spriteID: 4d618e6ccf7730360800000000000000
+      internalID: 7134678162237560532
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 26eccb83684b14d448e870b640da8e3e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      EvilDavisSpriteNew_0: -1365864010905203211
+      TwoSprite_0: 7134678162237560532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
