@@ -57,6 +57,10 @@ public class GunScript : MonoBehaviour
             Reload();
             nextReloadTime = Time.time + reloadCooldown;
         }
+        if (curAmmo == 0)
+        {
+            Reload();
+        }
     }
     public void Aim(Vector2 target)
     {
@@ -87,7 +91,6 @@ public class GunScript : MonoBehaviour
     {
        if (isReloading) { return; }
        StartCoroutine(ReloadCoroutine());
-       curAmmo = 6;
        mustReload = false;
     }
 
